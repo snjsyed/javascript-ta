@@ -1,6 +1,22 @@
 // complete the function
 function prime (num) {
-  // code goes here
+let res = false; //not a prime number
+if(num%2==0){
+  //return res;
+}
+  else if(num%5==0){
+    //return res
+  }
+  else{
+  for(let i=0;i<(num/2);i++){
+   if(num%i==0){
+    res = true;
+    break;
+   }
+  }
+}
+
+return res;
 }
 
 function solution (arg) {
